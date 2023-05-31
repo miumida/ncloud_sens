@@ -19,7 +19,8 @@ NAVER CLOUD Platform Simple &amp; Easy Notification Service를 사용하여 SMS�
 
 
 ## 참고사이트
-
+[1] 네이버 HomeAssistant 카페 | saranl님의 [NAVER Cloud SMS API (SENS)를 이용한 문자보내기 Custom component](https://cafe.naver.com/koreassistant/12829)<br>
+[2] NAVER CLOUD Platform - [Simple & Easy Notification Service](https://www.ncloud.com/product/applicationService/sens)
 
 [version-shield]: https://img.shields.io/badge/version-v1.0.0-orange.svg
 [hakc-shield]: https://img.shields.io/badge/HAKC-Enjoy-blue.svg
