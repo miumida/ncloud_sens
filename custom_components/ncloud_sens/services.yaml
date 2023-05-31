@@ -1,0 +1,53 @@
+# Example services.yaml entry
+send_message:
+  # Description of the service
+  description: Send message.
+  fields:
+    message:
+      description: "(필수) SENS API로 전송할 message."
+      example: "안녕하세요. 저는 NCLOUD SENS 입니다."
+      required: true
+      selector:
+        text:
+    sms_to:
+      description: "(옵션) 수신번호 : 붙임표 ( - )를 제외한 숫자만 입력 가능"
+      example: "01012345678"
+      selector:
+        text:
+    sms_from:
+      description: "(옵션) 발신번호 : ncloud에 등록된 다른발신번호를 사용할때"
+      example: "01012345678"
+      selector:
+        text:
+    type:
+      description: "(필수) SMS Type : SMS, LMS, MMS (소문자 가능)"
+      example: "SMS"
+      required: true
+      default: SMS
+      selector:
+        select:
+          options:
+            - SMS
+            - LMS
+            - MMS
+    content_type:
+      description: "(필수) 메시지 Type : COMM:일반메세지, AD:광고메세지"
+      example: "COMM"
+      required: true
+      default: "COMM"
+      selector:
+        select:
+          options:
+            - COMM
+            - AD
+    country_code:
+      description: "(필수) 국가 번호 : SENS에서 제공하는 국가로의 발송만 가능"
+      example: 82
+      required: true
+      default: 82
+      selector:
+        text:
+    title:
+      description: "(옵션) 문자제목 : LMS, MMS에서만 사용 가능"
+      selector:
+        text:
