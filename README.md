@@ -8,7 +8,9 @@ NAVER CLOUD Platform Simple &amp; Easy Notification Service를 사용하여 SMS�
 
 
 ## Version history
-
+| Version | Date        | 내용              |
+| :-----: | :---------: | --------------------------------------------------------------------------------------- |
+| v1.0.0  | 2023.06.01  | First version  |
 
 ## Installation
 
